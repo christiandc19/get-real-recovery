@@ -24,13 +24,23 @@ const Hero = () => {
                         <h1 className="animated-text">Get Real Recovery</h1>
                     <Fade left>
                         <h2>SUPPORT. TRANSFORM. HEAL.</h2>
-                        <p> "Empowering Minds, Renewing Lives."</p>
                     </Fade>
-                        <div className='hero-btn'>
+
+                    <Fade right>
+                    <p> "Empowering Minds, Renewing Lives."</p>
+
+                    </Fade>
+                    
+                    <div className='hero-btn'>
                         <Link to="/contact">
+                        <Fade bottom>
                         <button>Contact Us</button>
-                    </Link>
-                            <div>
+                        </Fade>
+
+                        </Link>
+                    <div>
+
+
                         </div>
                     </div>
                     <br />
