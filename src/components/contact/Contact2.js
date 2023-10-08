@@ -13,8 +13,18 @@ const ContactForm = () => {
         e.preventDefault();
 
 
+                // Popup message after send button is clicked
+                const feedbackEl = document.querySelector(".feedback");
+                feedbackEl.setAttribute("class", "feedback");
+                setTimeout(function() {
+                feedbackEl.setAttribute("class", "feedback hidden");
+                }, 3000);
+        
+
+
+
         //    Service Id        Template Id                 Public Key (Account Tab) 
-        emailjs.sendForm('service_9v2gipl', 'template_rxc8sbg', form.current, 'Rj5e7bWJla-kOEL0H')
+        emailjs.sendForm('service_hsunksm', 'template_rxc8sbg', form.current, 'Rj5e7bWJla-kOEL0H')
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
@@ -27,14 +37,11 @@ const ContactForm = () => {
     return (
         <>
 
-<div className="contactform2">
 
     <div className="contact2-header contact2-container">
         <h1>DO YOU NEED URGENT HELP?</h1>
-        <p>Our Mental Health Support team is available 24 hours a day 7 Days a week.</p>
+        <p>Our Addiction and Recovery Support team is available 24 hours a day 7 Days a week.</p>
     </div>
-
-
 
 <div class="contact2-container">
     <div class="contact-form-content">
@@ -44,7 +51,7 @@ const ContactForm = () => {
         <div class="address details">
           <i class="fas fa-map-marker-alt"></i>
           <div class="topic">Address</div><br/>
-          <div class="text-one">23412 Moulton Parkway, Suite 200, </div>
+          <div class="text-one"> 23412 Moulton Parkway, Suite 200, </div>
           <div class="text-two">Laguna Hills, CA 92653</div>
         </div>
 
@@ -57,7 +64,7 @@ const ContactForm = () => {
         <div class="email details">
           <i class="fas fa-envelope"></i>
           <div class="topic">Email</div><br/>
-          <div class="text-one">info@domainName.com</div>
+          <div class="text-one"> Info@GetRealRecovery.biz</div>
         </div>
       </div>
 
@@ -72,18 +79,28 @@ const ContactForm = () => {
         <input type="text" name='email' placeholder='Your Email' required />
         </div>
         <div class="input-box">
-        <input type="text" name='email' placeholder='Your Phone' required />
+        <input type="text" name='phone' placeholder='Your Phone' required />
+        </div>
+        <div class="input-box">
+        <input type="text" name='subject' placeholder='Subject' required />
         </div>
         <div class="input-box message-box">
         <textarea name="message" rows="4" placeholder="How can we help?" required ></textarea>
 
         </div>
         <input className="contact-btn" type="submit" value="Submit" />
+
+        <div className="textarea2 feedback hidden">
+            <textarea name="message2" cols="30" rows="3" required>Message Sent to Get Real Recovery</textarea>
+        </div>
+
+
+
       </form>
     </div>
     </div>
   </div>
-  </div>
+
         </>
     )
 }

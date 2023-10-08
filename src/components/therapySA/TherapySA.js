@@ -1,5 +1,4 @@
 import React from "react";
-import Fade from "react-reveal/Fade";
 import { Link as LinkRoll } from "react-scroll";
 
 import "./TherapySA.css";
@@ -9,49 +8,29 @@ import { CiPillsBottle1 } from "react-icons/ci";
 import { RiSyringeLine } from "react-icons/ri";
 import { TbPills } from "react-icons/tb";
 
+
+
 const TherapySA = () => {
   return (
     <>
       <div className="TherapySA">
-        <div className="content">
-          <Fade left>
-            <div className="TherapySA-left">
-              <div className="left-content">
-                <h1>Types of Substance Addiction Disorder We Treat</h1>
+        <div className="content container">
+          <div className="therapySA-right-header">
+
+            <h2>Break Free from Addiction</h2>
+            <h1>Types of Substance Addiction Disorder We Treat</h1>
                 <p>
-                  Here at Get Real Recovery, we offer a full array of affordable
-                  drug rehab programs that can take addicts from detox to
-                  inpatient or outpatient care and back home again.
-                </p>
-                <br />
+                  Here at Get Real Recovery, we offer a full array of
+                  affordable drug rehab programs that can take addicts from
+                  detox to inpatient or outpatient care and back home again.
+            </p>
+          </div>
+          
 
-                <div className="TherapySA-btn hide">
-                  <LinkRoll
-                    activeClass="active"
-                    to="top"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                  >
-                    <Link to="/substance-abuse">
-                      <div className="hero-btn">
-                        <button class="hero-cta">
-                          <span>VIEW ALL</span>
-                          <svg viewBox="0 0 13 10" height="10px" width="15px">
-                            <path d="M1,5 L11,5"></path>
-                            <polyline points="8 1 12 5 8 9"></polyline>
-                          </svg>
-                        </button>
-                      </div>
-                    </Link>
-                  </LinkRoll>
-                </div>
-              </div>
-            </div>
-          </Fade>
 
-          <div className="TherapySA-right">
-            <div className="box1 box">
+        <div className="therapy-sa-flex">
+
+        <div className="box1 box">
               <div className="box-content1">
                 <CiBeerMugFull className="box-icon" />
                 <h1>ALCOHOL ADDICTION</h1>
@@ -61,6 +40,7 @@ const TherapySA = () => {
                 </p>
               </div>
             </div>
+
 
             <div className="box2 box">
               <div className="box-content2">
@@ -98,30 +78,56 @@ const TherapySA = () => {
               </div>
             </div>
 
+
+
+        </div>
+
+
             <div className="TherapySA-btn hide-btn">
               <LinkRoll
                 activeClass="active"
-                to="top"
+                to="scroll"
                 spy={true}
                 smooth={true}
                 duration={500}
               >
                 <Link to="/substance-abuse">
-                  <div className="hero-btn">
-                    <button class="hero-cta">
+                  <div className="therapySA-btn">
+                    <button>
                       <span>VIEW ALL</span>
-                      <svg viewBox="0 0 13 10" height="10px" width="15px">
-                        <path d="M1,5 L11,5"></path>
-                        <polyline points="8 1 12 5 8 9"></polyline>
-                      </svg>
                     </button>
                   </div>
                 </Link>
               </LinkRoll>
             </div>
+
+
+            <div className="hide">
+                  <LinkRoll
+                    activeClass="active"
+                    to="top"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                  >
+                    <Link to="/substance-abuse">
+                      <div className="therapySA-btn">
+                        <button>
+                          <span>VIEW ALL</span>
+                        </button>
+                      </div>
+                    </Link>
+                  </LinkRoll>
+                </div>
+
+
+
+
+
+
+
           </div>
         </div>
-      </div>
     </>
   );
 };

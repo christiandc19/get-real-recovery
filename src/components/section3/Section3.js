@@ -1,165 +1,212 @@
 import React from "react";
 import "./Section3.css";
+
 import { Link } from "react-router-dom";
 import { Link as LinkRoll } from "react-scroll";
 
-import s31 from "../../assets/s31.jpg";
-import s32 from "../../assets/s32.jpg";
-import s33 from "../../assets/s33.jpg";
+import Card1 from "../../assets/programs-card-1.webp";
+import Card2 from "../../assets/programs-card-2.webp";
+import Card3 from "../../assets/programs-card-3.webp";
+import Card4 from "../../assets/programs-card-4.webp";
+import Card5 from "../../assets/programs-card-5.webp";
+import Card6 from "../../assets/programs-card-6.webp";
 
-import { BiBrain } from "react-icons/bi";
+
 
 const Section3 = () => {
   return (
     <>
       <div className="section3">
-        <div className="section3-top">
-          <div className="s3-flexItem">
-            <img src={s31} alt="Problem Discussion With Psychologist" />
-          </div>
+        <div className="section3-content container">
 
-          <div className="s3-flexItem">
-            <img src={s32} alt="Crying Woman Participating In Group" />
-          </div>
+          <div className="menu-programs-header container">
+              <h2>Let's Talk Mental Health</h2>
+              <h1>
+                Get Real Recovery Treatment Center offers various Mental Health Programs
+              
+              </h1>
+              <p>
+                At Get Real Recovery Treatment Center, clients receive individual
+                therapy alongside a range of additional treatments, including relapse
+                prevention, trauma therapy, mindfulness meditation, transportation,
+                yoga, and more. We offer support that clients need to allow them to
+                gradually go back to treatment.
+              </p>
+            </div>
 
-          <div className="s3-flexItem">
-            <img src={s33} alt="Depressed Man In Counseling Session " />
+
+          <div className="section3-flex">
+{/* PHP */}
+              <div class="section3-flexItem">
+                  <img src={Card1} alt="Mental Health" loading="lazy" />
+                <div>
+                  <h1>PARTIAL HOSPITALIZATION</h1>
+                  <div className="hide">
+                    <LinkRoll activeClass="active" to="top" spy={true} smooth={true} duration={500}>
+                      <Link to="/partial-hospitalization-program">
+                        <button>Learn More</button>
+                      </Link>
+                    </LinkRoll>
+                  </div>
+
+                  <div className="show">
+                    <LinkRoll activeClass="active" to="scroll" spy={true} smooth={true} duration={500}>
+                      <Link to="/partial-hospitalization-program">
+                        <button>Learn More</button>
+                      </Link>
+                    </LinkRoll>
+                  </div>
+                </div>
+              </div>
+
+{/* IOP */}
+
+              <div class="section3-flexItem">
+                  <img src={Card2} alt="Mental Health" loading="lazy" />
+                <div>
+                  <h1>INTENSIVE OUTPATIENT</h1>
+                  <div className="hide">
+                    <LinkRoll activeClass="active" to="top" spy={true} smooth={true} duration={500}>
+                      <Link to="/intensive-outpatient-program">
+                        <button>Learn More</button>
+                      </Link>
+                    </LinkRoll>
+                  </div>
+
+                  <div className="show">
+                    <LinkRoll activeClass="active" to="scroll" spy={true} smooth={true} duration={500}>
+                      <Link to="/intensive-outpatient-program">
+                        <button>Learn More</button>
+                      </Link>
+                    </LinkRoll>
+                  </div>
+                </div>
+              </div>
+
+
+{/* OP */}
+
+<div class="section3-flexItem">
+                  <img src={Card3} alt="Mental Health" loading="lazy" />
+                <div>
+                  <h1>OUTPATIENT</h1>
+                  <div className="hide">
+                    <LinkRoll activeClass="active" to="top" spy={true} smooth={true} duration={500}>
+                      <Link to="/outpatient-program">
+                        <button>Learn More</button>
+                      </Link>
+                    </LinkRoll>
+                  </div>
+
+                  <div className="show">
+                    <LinkRoll activeClass="active" to="scroll" spy={true} smooth={true} duration={500}>
+                      <Link to="/outpatient-program">
+                        <button>Learn More</button>
+                      </Link>
+                    </LinkRoll>
+                  </div>
+                </div>
+              </div>
+
+
+{/* CASE MANAGEMENT */}
+
+<div class="section3-flexItem">
+                  <img src={Card4} alt="Mental Health" loading="lazy" />
+                <div>
+                  <h1>CASE MANAGEMENT</h1>
+                  <div className="hide">
+                    <LinkRoll activeClass="active" to="top" spy={true} smooth={true} duration={500}>
+                      <Link to="/case-management">
+                        <button>Learn More</button>
+                      </Link>
+                    </LinkRoll>
+                  </div>
+
+                  <div className="show">
+                    <LinkRoll activeClass="active" to="scroll" spy={true} smooth={true} duration={500}>
+                      <Link to="/case-management">
+                        <button>Learn More</button>
+                      </Link>
+                    </LinkRoll>
+                  </div>
+                </div>
+              </div>
+
+
+
+{/* CRISIS INTERVENTION */}
+
+<div class="section3-flexItem">
+                  <img src={Card5} alt="Mental Health" loading="lazy" />
+                <div>
+                  <h1>CRISIS INTERVENTION</h1>
+                  <div className="hide">
+                    <LinkRoll activeClass="active" to="top" spy={true} smooth={true} duration={500}>
+                      <Link to="/crisis-intervention">
+                        <button>Learn More</button>
+                      </Link>
+                    </LinkRoll>
+                  </div>
+
+                  <div className="show">
+                    <LinkRoll activeClass="active" to="scroll" spy={true} smooth={true} duration={500}>
+                      <Link to="/crisis-intervention">
+                        <button>Learn More</button>
+                      </Link>
+                    </LinkRoll>
+                  </div>
+                </div>
+              </div>
+
+
+
+{/* FAMILY THERAPY */}
+
+<div class="section3-flexItem">
+                  <img src={Card6} alt="Mental Health" loading="lazy" />
+                <div>
+                  <h1>FAMILY THERAPY</h1>
+                  <div className="hide">
+                    <LinkRoll activeClass="active" to="top" spy={true} smooth={true} duration={500}>
+                      <Link to="/family-therapy">
+                        <button>Learn More</button>
+                      </Link>
+                    </LinkRoll>
+                  </div>
+
+                  <div className="show">
+                    <LinkRoll activeClass="active" to="scroll" spy={true} smooth={true} duration={500}>
+                      <Link to="/family-therapy">
+                        <button>Learn More</button>
+                      </Link>
+                    </LinkRoll>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           </div>
         </div>
-
-        <div className="component3">
-          <div className="c3-left">
-            <h2>MENTAL HEALTH SERVICES </h2>
-            <h1>
-              Get Real Recovery makes getting treatment{" "}
-              <i>
-                <span>simple</span>
-              </i>
-            </h1>
-            <p>
-              Your personal medical assistant is always a message away for
-              anything you need, at no cost.
-            </p>
-            <div className="c2-btn">
-              <LinkRoll
-                activeClass="active"
-                to="top"
-                spy={true}
-                smooth={true}
-                duration={500}
-              >
-                <Link to="/mental-health">
-                  <button>View All</button>
-                </Link>
-              </LinkRoll>
-            </div>
-          </div>
-
-          <div className="c3-right">
-            <div className="c3-card c3-card1">
-              <div className="c2-card-img"></div>
-              <div className="c3-card-flex">
-                <h2>
-                  <BiBrain />
-                </h2>
-                <h1>STRESS MANAGEMENT</h1>
-              </div>
-              <p>
-                Answer a few questions about your medical history to match with
-                your free medical assistant.
-              </p>
-              <div className="c3-link">
-                <p>LEARN MORE</p>
-              </div>
-            </div>
-
-            <div className="c3-card c3-card1">
-              <div className="c3-card-img"></div>
-              <div className="c3-card-flex">
-                <h2>
-                  <BiBrain />
-                </h2>
-                <h1>DEPRESSION</h1>
-              </div>
-              <p>
-                Answer a few questions about your medical history to match with
-                your free medical assistant.
-              </p>
-              <div className="c3-link">
-                <p>LEARN MORE</p>
-              </div>
-            </div>
-
-            <div className="c3-card c2-card1">
-              <div className="c3-card-img"></div>
-              <div className="c3-card-flex">
-                <h2>
-                  <BiBrain />
-                </h2>
-                <h1>ANXIETY DISORDER</h1>
-              </div>
-              <p>
-                Answer a few questions about your medical history to match with
-                your free medical assistant.
-              </p>
-              <div className="c3-link">
-                <p>LEARN MORE</p>
-              </div>
-            </div>
-
-            <div className="c3-card c3-card1">
-              <div className="c3-card-img"></div>
-              <div className="c3-card-flex">
-                <h2>
-                  <BiBrain />
-                </h2>
-                <h1>ANGER MANAGEMENT</h1>
-              </div>
-              <p>
-                Answer a few questions about your medical history to match with
-                your free medical assistant.
-              </p>
-              <div className="c3-link">
-                <p>LEARN MORE</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* <div className='section3-bottom'>
-
-                <div className='s3-bot-flex'>
-                    <div className='s3-bot-icon'>
-                    <h2><BiBrain /></h2>
-                    </div>
-                    <div className='s3-bot-caption'>
-                        <h1>Stress Management</h1>
-                    </div>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                </div>
-
-
-                <div className='s3-bot-flex'>
-                    <div className='s3-bot-icon'>
-                    <h2><BiBrain /></h2>
-                    </div>
-                    <div className='s3-bot-caption'>
-                        <h1>Stress Management</h1>
-                    </div>
-                </div>
-
-
-                <div className='s3-bot-flex'>
-                    <div className='s3-bot-icon'>
-                    <h2><BiBrain /></h2>
-                    </div>
-                    <div className='s3-bot-caption'>
-                        <h1>Stress Management</h1>
-                    </div>
-                </div> */}
-
-        {/* </div> */}
       </div>
+
     </>
   );
 };

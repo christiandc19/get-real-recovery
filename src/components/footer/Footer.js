@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { BsFillArrowUpCircleFill } from "react-icons/bs";
-import logo from "../../assets/nav-logo.png";
-// import { FiMail, FiFacebook, FiGithub, FiInstagram, FiLinkedin, FiDribbble } from 'react-icons/fi'
+import logo from '../../assets/nav-logo-wh.png'
 import "./FooterStyles.css";
 
 import { Link as LinkRoll } from "react-scroll";
@@ -14,183 +13,291 @@ const Footer = () => {
         <div className="container">
           <div className="top">
             <div className="logo-footer">
-              <img
-                src={logo}
-                width="180px"
-                height="80px"
-                alt="Palm Springs Rehab Logo"
-                loading="lazy"
-              />
+              <img src={logo} alt="Get Real Recovery Logo" loading="lazy"/>
             </div>
-            <LinkRoll
-              activeClass="active"
-              to="top"
-              spy={true}
-              smooth={true}
-              duration={500}
-            >
-              <BsFillArrowUpCircleFill className="icon" />
-            </LinkRoll>
+
+
+            <div className="hide">
+              <LinkRoll activeClass="active" to="top" spy={true} smooth={true} duration={500}>
+                <BsFillArrowUpCircleFill className="icon" />
+              </LinkRoll>
+            </div>
+
+            <div className="show">
+              <LinkRoll activeClass="active" to="scroll" spy={true} smooth={true} duration={500}>
+                <BsFillArrowUpCircleFill className="icon" />
+              </LinkRoll>
+            </div>
+
           </div>
+
+
+
           <div className="col-container">
             <div className="col">
               <h3>COMPANY</h3>
 
-              <LinkRoll
-                activeClass="active"
-                to="top"
-                spy={true}
-                smooth={true}
-                duration={500}
-              >
-                <Link to="/mission">
-                  <p>Our Mission</p>
-                </Link>
-              </LinkRoll>
+{/* MISSION */}
 
-              <LinkRoll
-                activeClass="active"
-                to="top"
-                spy={true}
-                smooth={true}
-                duration={500}
-              >
-                <Link to="/about-us">
-                  <p>About Us</p>
-                </Link>
-              </LinkRoll>
+              <div className="hide">
+                <LinkRoll activeClass="active" to="top" spy={true} smooth={true} duration={500}>
+                  <Link to="/mission">
+                    <p>Our Mission</p>
+                  </Link>
+                </LinkRoll>
+              </div>
 
-              <LinkRoll
-                activeClass="active"
-                to="top"
-                spy={true}
-                smooth={true}
-                duration={500}
-              >
-                <Link to="/mental-health">
-                  <p>Programs</p>
-                </Link>
-              </LinkRoll>
-            </div>
+              <div className="show">
+                <LinkRoll activeClass="active" to="scroll" spy={true} smooth={true} duration={500}>
+                  <Link to="/mission">
+                    <p>Our Mission</p>
+                  </Link>
+                </LinkRoll>
+              </div>
+
+
+{/* ABOUT US */}
+
+              <div className="hide">
+                <LinkRoll activeClass="active" to="top" spy={true} smooth={true} duration={500}>
+                  <Link to="/about-us">
+                    <p>About Us</p>
+                  </Link>
+                </LinkRoll>
+              </div>
+
+              <div className="show">
+                <LinkRoll activeClass="active" to="scroll" spy={true} smooth={true} duration={500}>
+                  <Link to="/about-us">
+                    <p>About Us</p>
+                  </Link>
+                </LinkRoll>
+              </div>
+
+
+{/* INSURANCE */}
+
+              <div className="hide">
+                <LinkRoll activeClass="active" to="top" spy={true} smooth={true} duration={500}>
+                  <Link to="contact">
+                    <p>Contact Us</p>
+                  </Link>
+                </LinkRoll>
+              </div>
+
+              <div className="show">
+                <LinkRoll activeClass="active" to="scroll" spy={true} smooth={true} duration={500}>
+                  <Link to="/contact">
+                    <p>Contact Us</p>
+                  </Link>
+                </LinkRoll>
+              </div>
+
+          </div>
+
+
+
+{/* NAVIGATION */}
 
             <div className="col">
               <h3>Navigation</h3>
 
-              <LinkRoll
-                activeClass="active"
-                to="top"
-                spy={true}
-                smooth={true}
-                duration={500}
-              >
-                <Link to="/">
-                  <p>Home</p>
-                </Link>
-              </LinkRoll>
+{/* HOME */}
 
-              <LinkRoll
-                activeClass="active"
-                to="top"
-                spy={true}
-                smooth={true}
-                duration={500}
-              >
-                <Link to="/treatment">
-                  <p>Our Method</p>
-                </Link>
-              </LinkRoll>
+              <div className="hide">
+                <LinkRoll activeClass="active" to="top" spy={true} smooth={true} duration={500}>
+                  <Link to="/">
+                    <p>Home</p>
+                  </Link>
+                </LinkRoll>
+              </div>
 
-              <LinkRoll
-                activeClass="active"
-                to="top"
-                spy={true}
-                smooth={true}
-                duration={500}
-              >
-                <Link to="/insurance">
-                  <p>Insurance</p>
-                </Link>
-              </LinkRoll>
+              <div className="show">
+                <LinkRoll activeClass="active" to="scroll" spy={true} smooth={true} duration={500}>
+                  <Link to="/">
+                    <p>Home</p>
+                  </Link>
+                </LinkRoll>
+              </div>
 
-              <LinkRoll
-                activeClass="active"
-                to="top"
-                spy={true}
-                smooth={true}
-                duration={500}
-              >
-                <Link to="/contact">
-                  <p>Contact</p>
-                </Link>
-              </LinkRoll>
+
+{/* INSURANCE */}
+
+              <div className="hide">
+                <LinkRoll activeClass="active" to="top" spy={true} smooth={true} duration={500}>
+                  <Link to="/insurance">
+                    <p>Insurance</p>
+                  </Link>
+                </LinkRoll>
+              </div>
+
+              <div className="show">
+                <LinkRoll activeClass="active" to="scroll" spy={true} smooth={true} duration={500}>
+                  <Link to="/insurance">
+                    <p>Insurance</p>
+                  </Link>
+                </LinkRoll>
+              </div>
+
+{/* JOB */}
+
+<div className="hide">
+                <LinkRoll activeClass="active" to="top" spy={true} smooth={true} duration={500}>
+                  <Link to="/jobs">
+                    <p>Job Assistance</p>
+                  </Link>
+                </LinkRoll>
+              </div>
+
+              <div className="show">
+                <LinkRoll activeClass="active" to="scroll" spy={true} smooth={true} duration={500}>
+                  <Link to="/jobs">
+                    <p>Job Assistance</p>
+                  </Link>
+                </LinkRoll>
+              </div>
+
             </div>
 
-            {/* <div className="col">
-                        <h3>SUBSTANCE ABUSE</h3>
-                        <LinkRoll activeClass="active" to="top" spy={true} smooth={true} duration={500} >
-                        <Link to='/substance-abuse-php'><p>Partial Hospitalization Program</p></Link>
-                        </LinkRoll>
 
-                        <LinkRoll activeClass="active" to="top" spy={true} smooth={true} duration={500} >
-                        <Link to='/substance-abuse-iop'><p>Intensive Outpatient Program</p></Link>
-                        </LinkRoll>
 
-                        <LinkRoll activeClass="active" to="top" spy={true} smooth={true} duration={500} >
-                        <Link to='/substance-abuse-op'><p>Outpatient Program</p></Link>
-                        </LinkRoll>
-                    </div> */}
+
+
+
+
 
             <div className="col">
-              <h3>MENTAL HEALTH</h3>
-              <LinkRoll
-                activeClass="active"
-                to="top"
-                spy={true}
-                smooth={true}
-                duration={500}
-              >
-                <Link to="/mental-health-php">
-                  <p>Partial Hospitalization Program</p>
-                </Link>
-              </LinkRoll>
+              <h3>PROGRAMS</h3>
 
-              <LinkRoll
-                activeClass="active"
-                to="top"
-                spy={true}
-                smooth={true}
-                duration={500}
-              >
-                <Link to="/mental-health-iop">
-                  <p>Intensive Outpatient Program</p>
-                </Link>
-              </LinkRoll>
+{/* PHP */}
+              <div className="hide">
+                <LinkRoll activeClass="active" to="top" spy={true} smooth={true} duration={500}>
+                  <Link to="/partial-hospitalization-program">
+                    <p>Partial Hospitalization Program</p>
+                  </Link>
+                </LinkRoll>
+              </div>
 
-              <LinkRoll
-                activeClass="active"
-                to="top"
-                spy={true}
-                smooth={true}
-                duration={500}
-              >
-                <Link to="/mental-health-op">
-                  <p>Outpatient Program</p>
-                </Link>
-              </LinkRoll>
+              <div className="show">
+                <LinkRoll activeClass="active" to="scroll" spy={true} smooth={true} duration={500}>
+                  <Link to="/partial-hospitalization-program">
+                    <p>Partial Hospitalization Program</p>
+                  </Link>
+                </LinkRoll>
+              </div>  
+
+
+{/* IOP */}
+
+<div className="hide">
+                <LinkRoll activeClass="active" to="top" spy={true} smooth={true} duration={500}>
+                  <Link to="/intensive-outpatient-program">
+                    <p>Intensive Outpatient Program</p>
+                  </Link>
+                </LinkRoll>
+              </div>
+
+              <div className="show">
+                <LinkRoll activeClass="active" to="scroll" spy={true} smooth={true} duration={500}>
+                  <Link to="/intensive-outpatient-program">
+                    <p>Intensive Outpatient Program</p>
+                  </Link>
+                </LinkRoll>
+              </div> 
+
+{/* OP */}
+
+<div className="hide">
+                <LinkRoll activeClass="active" to="top" spy={true} smooth={true} duration={500}>
+                  <Link to="/outpatient-program">
+                    <p>Outpatient Program</p>
+                  </Link>
+                </LinkRoll>
+              </div>
+
+              <div className="show">
+                <LinkRoll activeClass="active" to="scroll" spy={true} smooth={true} duration={500}>
+                  <Link to="/outpatient-program">
+                    <p>Outpatient Program</p>
+                  </Link>
+                </LinkRoll>
+              </div>
+
+
             </div>
 
-            {/* <form>
-                        <h3>Join Our Team</h3>
-                        <input type="email" placeholder='Enter your email' />
-                        <FiMail className='mail-icon' />
-                        <div className="social-group">
-                            <FiInstagram className='social-icon' />
-                            <FiFacebook className='social-icon' />
-                            <FiLinkedin className='social-icon' />
-                            <FiDribbble className='social-icon' />
-                            <FiGithub className='social-icon' />
-                        </div>
-                    </form> */}
+
+
+
+
+
+
+            <div className="col">
+              <h3>SERVICES</h3>
+
+{/* PHP */}
+              <div className="hide">
+                <LinkRoll activeClass="active" to="top" spy={true} smooth={true} duration={500}>
+                  <Link to="/case-management">
+                    <p>Case Management</p>
+                  </Link>
+                </LinkRoll>
+              </div>
+
+              <div className="show">
+                <LinkRoll activeClass="active" to="scroll" spy={true} smooth={true} duration={500}>
+                  <Link to="/case-management">
+                    <p>Case Management</p>
+                  </Link>
+                </LinkRoll>
+              </div>  
+
+
+{/* IOP */}
+
+<div className="hide">
+                <LinkRoll activeClass="active" to="top" spy={true} smooth={true} duration={500}>
+                  <Link to="/crisis-intervention">
+                    <p>Crisis Intervention</p>
+                  </Link>
+                </LinkRoll>
+              </div>
+
+              <div className="show">
+                <LinkRoll activeClass="active" to="scroll" spy={true} smooth={true} duration={500}>
+                  <Link to="/crisis-intervention">
+                    <p>Crisis Intervention</p>
+                  </Link>
+                </LinkRoll>
+              </div> 
+
+{/* OP */}
+
+<div className="hide">
+                <LinkRoll activeClass="active" to="top" spy={true} smooth={true} duration={500}>
+                  <Link to="/family-therapy">
+                    <p>Family Therapy</p>
+                  </Link>
+                </LinkRoll>
+              </div>
+
+              <div className="show">
+                <LinkRoll activeClass="active" to="scroll" spy={true} smooth={true} duration={500}>
+                  <Link to="/family-therapy">
+                    <p>Family Therapy</p>
+                  </Link>
+                </LinkRoll>
+              </div>
+
+
+            </div>
+
+
+
+
+
+
+
           </div>
           <p className="copyright">
             <p>

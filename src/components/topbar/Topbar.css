@@ -1,32 +1,87 @@
 .topbar {
     width: 100%;
-    padding: .7rem;
-    background-color: #783B04;
+    padding: .5rem;
+    background-color: rgb(221, 142, 23);
 }
+
+
 
 .topbar .topbar-content {
     display: flex;
-    color: white;
+    justify-content: space-around;
+    color: #f5efef;
 }
 
+
 .topbar .topbar-content p {
-    padding: 0 1rem;
     font-size: 14px;
+    text-align: left;
 }
 
 .topbar .bar-box1 {
-    width: 16rem;
-    border-right: 1px solid rgba(255, 255, 255, 0.459);
+    display: flex;
+    width: auto;
+    border-right: 1px solid rgba(247, 243, 243, 0.26);
+    margin: auto;
+    padding: 0 1rem;
+
+}
+
+.topbar .bar-box1 span {
+    margin: auto;
+    font-size: 1rem;
+    color: rgb(237, 241, 243);
 }
 
 .topbar .bar-box2 {
-    width: 13rem;
-    border-right: 1px solid rgba(255, 255, 255, 0.459);
+    display: flex;
+    border-right: 1px solid rgba(247, 243, 243, 0.26);
+    margin: auto;
+    padding: 0 1rem;
+}
+
+.topbar .bar-box2 span {
+    font-size: 1.2rem;
+    color: rgb(237, 241, 243);
+    padding: 0 .3rem;
+}
+
+
+.topbar .bar-box3 {
+    display: flex;
+    width: auto;
+    margin: auto;
+    padding: 0 1rem;
 
 }
 
-@media screen and (max-width: 700px) {
-    .topbar {
+.topbar .bar-box3 span {
+    margin: auto;
+    font-size: 1.2rem;
+    color: rgb(237, 241, 243);
+    padding: 0 .3rem;
+
+}
+
+@media screen and (max-width: 1200px) {
+    .topbar .hide {
         display: none;
     }
+
+    .topbar .bar-box2 span {
+        font-size: 1rem;
+    }
+    
+    .topbar .bar-box2 p {
+        font-size: 12px;
+    }
+
+    .topbar .bar-box3 span {
+        font-size: 1rem;
+    }
+    
+    .topbar .bar-box3 p {
+        font-size: 12px;
+    }
+
 }
