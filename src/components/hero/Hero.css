@@ -12,7 +12,9 @@ video {
 .hero .hero-container .content {
     width: 100%;
     position: absolute;
-    bottom: 20%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding: 1rem;
 }
 
@@ -26,7 +28,7 @@ video {
 }
 
 .hero h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
     letter-spacing: 3px;
     text-align: center;
@@ -62,9 +64,7 @@ video {
 
 @media screen and (max-width:940px) {
 
-    .hero h1 {
-    font-size: 3.2rem;
-    }
+
 
     .hero p {
         font-size: 2rem;
@@ -73,7 +73,7 @@ video {
 }
 
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:700px) {
 
     .hero h1 {
         font-size: 3rem;
@@ -87,7 +87,11 @@ video {
         font-size: .8rem;
         color: white;
     }
-    
+
+    .hero .hero-container .content {
+        top: 55%;
+    }
+
 
     }
     
