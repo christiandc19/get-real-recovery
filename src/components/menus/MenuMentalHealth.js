@@ -12,7 +12,7 @@ const MenuMentalHealth = () => {
 
         <div className="menu-mental-health-header container">
           <h1>
-            Get Real Recovery TREATMENT CENTER OFFERS VARIOUS MENTAL HEALTH
+            GET REAL RECOVERY TREATMENT CENTER OFFERS VARIOUS MENTAL HEALTH
             PROGRAM
           </h1>
           <p>

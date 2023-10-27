@@ -14,7 +14,7 @@ const MenuAddiction = () => {
 
       <div className="menu-addiction-header">
         <h1>
-          Get Real Recovery TREATMENT CENTER OFFERS VARIOUS MENTAL HEALTH
+          GET REAL RECOVERY TREATMENT CENTER OFFERS VARIOUS MENTAL HEALTH
           PROGRAMS
         </h1>
         <p>
