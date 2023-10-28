@@ -114,15 +114,10 @@
 
 
   /* -----------------------------------------------------> DROPDOWN ARROW */
-  .sub__menus__arrows {
-    position: relative;
-  }
-
   .sub__menus__arrows svg, .sub__menus__arrows__full svg {
-    position: absolute;
-    color: rgb(16, 17, 16);
-    top: 7px;
-    right: -10;
+    padding-top: 5px;
+    top: 10px;
+    font-size: 18px;
   }
 
 
@@ -210,9 +205,6 @@
     background-color: #fff;
 }
 
-.sub__menus__arrows svg, .sub__menus__arrows__full svg {
-  top: 15px;
-}
 
 
 }
